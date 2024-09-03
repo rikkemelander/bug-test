@@ -1,1 +1,1 @@
-select * from {{ ref('AGGREGATES') }}
+select TOTAL_COST from {{ ref('AGGREGATES') }}
