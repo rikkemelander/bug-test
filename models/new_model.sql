@@ -1,1 +1,1 @@
-select TOTAL_COST from {{ ref('AGGREGATES') }}
+select TOTAL_COST as TEST from {{ ref('AGGREGATES') }}
