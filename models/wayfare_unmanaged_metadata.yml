@@ -26,7 +26,7 @@ sources:
     tables:
       - name: PRODUCTCATEGORIES
         description: ""
-        tags: []
+        tags: ["table_tag"]
         columns:
           - name: CATEGORYNAME
             tags: []
@@ -43,7 +43,7 @@ sources:
         tags: []
         columns:
           - name: MODELNAME
-            tags: []
+            tags: ["column_tag"]
           - name: PRODUCTCOLOR
             tags: []
           - name: PRODUCTCOST
