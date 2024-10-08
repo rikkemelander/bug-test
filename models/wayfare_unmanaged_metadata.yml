@@ -26,7 +26,7 @@ sources:
     tables:
       - name: AGGREGATES
         description: ""
-        tags: []
+        tags: ["table_tag"]
         columns:
           - name: CATEGORYNAME
             tags: []
@@ -37,7 +37,7 @@ sources:
         tags: []
         columns:
           - name: CATEGORYNAME
-            tags: []
+            tags: ["column_tag"]
           - name: PRODUCTCATEGORYKEY
             tags: []
           - name: _WAYFARE_CREATED_AT
