@@ -26,63 +26,63 @@ sources:
     tables:
       - name: PRODUCTCATEGORIES
         description: ""
-        tags: *a1
+        tags: []
         columns:
           - name: CATEGORYNAME
-            tags: *a2
+            tags: []
           - name: PRODUCTCATEGORYKEY
-            tags: *a3
+            tags: []
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: *a4
+            tags: []
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: *a5
+            tags: []
       - name: PRODUCTS
         description: ""
-        tags: *a6
+        tags: []
         columns:
           - name: MODELNAME
-            tags: *a7
+            tags: []
           - name: PRODUCTCOLOR
-            tags: *a8
+            tags: []
           - name: PRODUCTCOST
-            tags: *a9
+            tags: []
           - name: PRODUCTDESCRIPTION
-            tags: *a10
+            tags: []0
           - name: PRODUCTKEY
-            tags: *a11
+            tags: []1
           - name: PRODUCTNAME
-            tags: *a12
+            tags: []2
           - name: PRODUCTPRICE
-            tags: *a13
+            tags: []3
           - name: PRODUCTSIZE
-            tags: *a14
+            tags: []4
           - name: PRODUCTSKU
-            tags: *a15
+            tags: []5
           - name: PRODUCTSTYLE
-            tags: *a16
+            tags: []6
           - name: PRODUCTSUBCATEGORYKEY
-            tags: *a17
+            tags: []7
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: *a18
+            tags: []8
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: *a19
+            tags: []9
       - name: PRODUCTSUBCATEGORIES
         description: ""
-        tags: *a20
+        tags: []0
         columns:
           - name: PRODUCTCATEGORYKEY
-            tags: *a21
+            tags: []1
           - name: PRODUCTSUBCATEGORYKEY
-            tags: *a22
+            tags: []2
           - name: SUBCATEGORYNAME
-            tags: *a23
+            tags: []3
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: *a24
+            tags: []4
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: *a25
+            tags: []5
