@@ -49,40 +49,40 @@ sources:
           - name: PRODUCTCOST
             tags: []
           - name: PRODUCTDESCRIPTION
-            tags: []0
+            tags: []
           - name: PRODUCTKEY
-            tags: []1
+            tags: []
           - name: PRODUCTNAME
-            tags: []2
+            tags: []
           - name: PRODUCTPRICE
-            tags: []3
+            tags: []
           - name: PRODUCTSIZE
-            tags: []4
+            tags: []
           - name: PRODUCTSKU
-            tags: []5
+            tags: []
           - name: PRODUCTSTYLE
-            tags: []6
+            tags: []
           - name: PRODUCTSUBCATEGORYKEY
-            tags: []7
+            tags: []
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: []8
+            tags: []
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: []9
+            tags: []
       - name: PRODUCTSUBCATEGORIES
         description: ""
-        tags: []0
+        tags: []
         columns:
           - name: PRODUCTCATEGORYKEY
-            tags: []1
+            tags: []
           - name: PRODUCTSUBCATEGORYKEY
-            tags: []2
+            tags: []
           - name: SUBCATEGORYNAME
-            tags: []3
+            tags: []
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: []4
+            tags: []
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: []5
+            tags: []
