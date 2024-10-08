@@ -18,11 +18,4 @@
 # and any added properties might be reordered.
 
 version: 2
-sources:
-  - database: DEMO
-    name: wayfare
-    description: Sources synced from wayfare
-    schema: PUBLIC
-    loader: wayfare
-    loaded_at_field: _wayfare_updated_at
-    tables: []
+sources: []

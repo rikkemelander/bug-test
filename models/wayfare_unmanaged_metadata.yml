@@ -19,134 +19,70 @@
 
 version: 2
 sources:
-  - database: DEMO
+  - database: DEV
     name: wayfare_unmanaged
     description: Unmanaged sources in the warehouse
-    schema: PUBLIC
+    schema: RMEL
     tables:
-      - name: AGGREGATES
-        description: ""
-        tags: ["table_tag"]
-        columns:
-          - name: CATEGORYNAME
-            tags: []
-          - name: TOTAL_COST
-            tags: []
       - name: PRODUCTCATEGORIES
         description: ""
-        tags: []
+        tags: *a1
         columns:
           - name: CATEGORYNAME
-            tags: ["column_tag"]
+            tags: *a2
           - name: PRODUCTCATEGORYKEY
-            tags: []
+            tags: *a3
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: []
+            tags: *a4
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: []
+            tags: *a5
       - name: PRODUCTS
         description: ""
-        tags: []
+        tags: *a6
         columns:
           - name: MODELNAME
-            tags: []
+            tags: *a7
           - name: PRODUCTCOLOR
-            tags: []
+            tags: *a8
           - name: PRODUCTCOST
-            tags: []
+            tags: *a9
           - name: PRODUCTDESCRIPTION
-            tags: []
+            tags: *a10
           - name: PRODUCTKEY
-            tags: []
+            tags: *a11
           - name: PRODUCTNAME
-            tags: []
+            tags: *a12
           - name: PRODUCTPRICE
-            tags: []
+            tags: *a13
           - name: PRODUCTSIZE
-            tags: []
+            tags: *a14
           - name: PRODUCTSKU
-            tags: []
+            tags: *a15
           - name: PRODUCTSTYLE
-            tags: []
+            tags: *a16
           - name: PRODUCTSUBCATEGORYKEY
-            tags: []
+            tags: *a17
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: []
+            tags: *a18
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: []
+            tags: *a19
       - name: PRODUCTSUBCATEGORIES
         description: ""
-        tags: []
+        tags: *a20
         columns:
           - name: PRODUCTCATEGORYKEY
-            tags: []
+            tags: *a21
           - name: PRODUCTSUBCATEGORYKEY
-            tags: []
+            tags: *a22
           - name: SUBCATEGORYNAME
-            tags: []
+            tags: *a23
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: []
+            tags: *a24
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: []
-      - name: STG_PRODUCTCATEGORIES
-        description: ""
-        tags: []
-        columns:
-          - name: CATEGORYNAME
-            tags: []
-          - name: PRODUCTCATEGORYKEY
-            tags: []
-          - name: _WAYFARE_CREATED_AT
-            tags: []
-          - name: _WAYFARE_UPDATED_AT
-            tags: []
-      - name: STG_PRODUCTS
-        description: ""
-        tags: []
-        columns:
-          - name: MODELNAME
-            tags: []
-          - name: PRODUCTCOLOR
-            tags: []
-          - name: PRODUCTCOST
-            tags: []
-          - name: PRODUCTDESCRIPTION
-            tags: []
-          - name: PRODUCTKEY
-            tags: []
-          - name: PRODUCTNAME
-            tags: []
-          - name: PRODUCTPRICE
-            tags: []
-          - name: PRODUCTSIZE
-            tags: []
-          - name: PRODUCTSKU
-            tags: []
-          - name: PRODUCTSTYLE
-            tags: []
-          - name: PRODUCTSUBCATEGORYKEY
-            tags: []
-          - name: _WAYFARE_CREATED_AT
-            tags: []
-          - name: _WAYFARE_UPDATED_AT
-            tags: []
-      - name: STG_PRODUCTSUBCATEGORIES
-        description: ""
-        tags: []
-        columns:
-          - name: PRODUCTCATEGORYKEY
-            tags: []
-          - name: PRODUCTSUBCATEGORYKEY
-            tags: []
-          - name: SUBCATEGORYNAME
-            tags: []
-          - name: _WAYFARE_CREATED_AT
-            tags: []
-          - name: _WAYFARE_UPDATED_AT
-            tags: []
+            tags: *a25
