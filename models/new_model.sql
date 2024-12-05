@@ -1,1 +1,1 @@
-select * from {{ source('wayfare_unmanaged', 'PRODUCTS') }}
+select * from {{ ref('STG_PRODUCTS') }}
