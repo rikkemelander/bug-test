@@ -1,0 +1,39 @@
+version: "0.1"
+syncs:
+  - id: 881574eb-ebdb-47b7-8e16-93edf0380c31
+    connection_id: 60e3b510-126c-4c0b-a894-e112f065f149
+    name: asdf
+    description: ""
+    extraction_concurrency:
+      num_workers: 1
+    file_storage:
+      folder_path: ""
+      file_details:
+        type: PARQUET
+      batch_size: 250000
+      delete_after_sync: true
+    data_sets:
+      - unique_id: blns_dataset_uid
+        target_name: blns_dataset
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: blns_dataset_uid.blns_col
+            target_name: blns_col
+      - unique_id: dummy_contacts_uid
+        target_name: dummy_contacts
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: dummy_contacts_uid.name
+            target_name: name
+          - unique_id: dummy_contacts_uid.email
+            target_name: email
+          - unique_id: dummy_contacts_uid.company
+            target_name: company
