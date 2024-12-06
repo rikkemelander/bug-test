@@ -1,7 +1,7 @@
 version: "0.1"
 syncs:
-  - id: 881574eb-ebdb-47b7-8e16-93edf0380c31
-    connection_id: 60e3b510-126c-4c0b-a894-e112f065f149
+  - id: 49efd397-9b90-4a79-9bf2-3ff937ad8327
+    connection_id: 594c6c2f-7715-4089-b7b4-8cdf6192c617
     name: asdf
     description: ""
     extraction_concurrency:
@@ -13,27 +13,13 @@ syncs:
       batch_size: 250000
       delete_after_sync: true
     data_sets:
-      - unique_id: blns_dataset_uid
-        target_name: blns_dataset
+      - unique_id: biomarkers-30600-both_sexes-irnt
+        target_name: biomarkers_30600_both_sexes_irnt
         data_extraction_config:
           name: Full Extract
           values: null
         loading_option:
           type: Truncate and insert
         data_fields:
-          - unique_id: blns_dataset_uid.blns_col
-            target_name: blns_col
-      - unique_id: dummy_contacts_uid
-        target_name: dummy_contacts
-        data_extraction_config:
-          name: Full Extract
-          values: null
-        loading_option:
-          type: Truncate and insert
-        data_fields:
-          - unique_id: dummy_contacts_uid.name
-            target_name: name
-          - unique_id: dummy_contacts_uid.email
-            target_name: email
-          - unique_id: dummy_contacts_uid.company
-            target_name: company
+          - unique_id: biomarkers-30600-both_sexes-irnt.af_AFR
+            target_name: af_afr
