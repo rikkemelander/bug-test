@@ -1,0 +1,56 @@
+version: "0.1"
+syncs:
+  - id: de9d506a-5e1e-492c-b6f4-94b4dd19121c
+    connection_id: 482947d8-6865-42dd-9504-0f32df483738
+    name: sadf
+    description: ""
+    extraction_concurrency:
+      num_workers: 1
+    file_storage:
+      folder_path: ""
+      file_details:
+        type: PARQUET
+      batch_size: 250000
+      delete_after_sync: true
+    data_sets:
+      - unique_id: blns_dataset_uid
+        target_name: blns_dataset
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: blns_dataset_uid.blns_col
+            target_name: blns_col
+      - unique_id: dummy_contacts_uid
+        target_name: dummy_contacts
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: dummy_contacts_uid.email
+            target_name: email
+          - unique_id: dummy_contacts_uid.name
+            target_name: name
+          - unique_id: dummy_contacts_uid.company
+            target_name: company
+      - unique_id: dataset_with_deletes_uid
+        target_name: dataset_with_deletes
+        data_extraction_config:
+          name: Incremental
+          values:
+            percent_deletes: "0.1"
+            random_deletes: true
+        loading_option:
+          type: Upsert
+          delete_mode: hard
+          primary_keys:
+            - dataset_with_deletes_uid.id
+        data_fields:
+          - unique_id: dataset_with_deletes_uid.val
+            target_name: val
+          - unique_id: dataset_with_deletes_uid.id
+            target_name: id
