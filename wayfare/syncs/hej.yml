@@ -1,7 +1,7 @@
 version: "0.1"
 syncs:
-  - id: a66a7465-b3bf-4370-8492-c9a0f5bf6f38
-    connection_id: 926b57df-65c3-4951-af33-7a40f1a75da3
+  - id: 19cb918f-149d-4f74-a351-573586539331
+    connection_id: 0debd888-9a65-44bb-aa4e-c75b6c4ab244
     name: hej
     description: ""
     extraction_concurrency:
@@ -13,21 +13,13 @@ syncs:
       batch_size: 250000
       delete_after_sync: true
     data_sets:
-      - unique_id: devdata/sample/data/AdventureWorks_Product_Subcategories.csv
-        target_name: adventure_works_product_subcategories
+      - unique_id: blns_dataset_uid
+        target_name: blns_dataset
         data_extraction_config:
           name: Full Extract
           values: null
         loading_option:
           type: Truncate and insert
         data_fields:
-          - unique_id: devdata/sample/data/AdventureWorks_Product_Subcategories.csv.content
-            target_name: content
-          - unique_id: devdata/sample/data/AdventureWorks_Product_Subcategories.csv.content_md5
-            target_name: content_md_5
-          - unique_id: devdata/sample/data/AdventureWorks_Product_Subcategories.csv.content_type
-            target_name: content_type
-          - unique_id: devdata/sample/data/AdventureWorks_Product_Subcategories.csv.path
-            target_name: path
-          - unique_id: devdata/sample/data/AdventureWorks_Product_Subcategories.csv.size
-            target_name: size
+          - unique_id: blns_dataset_uid.blns_col
+            target_name: blns_col
