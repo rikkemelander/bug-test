@@ -22,67 +22,2277 @@ sources:
   - database: DEV
     name: wayfare_unmanaged
     description: Unmanaged sources in the warehouse
+    schema: ADMIN
+    tables:
+      - name: BUGGED
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL_COUNT
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: CONTACTS_WITH_GROUP
+        description: ""
+        columns:
+          - name: GROUP_ID
+          - name: ID
+      - name: CONTACT_GROUPS
+        description: ""
+        columns:
+          - name: GROUP_ID
+          - name: ID
+      - name: CONTACT_SALARIES
+        description: ""
+        columns:
+          - name: ID
+          - name: SALARY
+      - name: M1
+        description: ""
+        columns:
+          - name: FIRST_ID
+          - name: SECOND_ID
+      - name: M_1
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: NEW_MODEL
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: AGE
+      - name: SELECT_WITH_CTES
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: WITH_CTES
+        description: ""
+        columns:
+          - name: FINAL_COL
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_F5269A
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: DATASET
+        description: ""
+        columns:
+          - name: ANY
+            description: ""
+          - name: ARRAY_ANY
+            description: ""
+          - name: ARRAY_BOOLEAN
+            description: ""
+          - name: ARRAY_BYTES
+            description: ""
+          - name: ARRAY_DATE
+            description: ""
+          - name: ARRAY_DATETIME_WITHOUT_TIMEZONE
+            description: ""
+          - name: ARRAY_DATETIME_WITH_TIMEZONE
+            description: ""
+          - name: ARRAY_DECIMAL
+            description: ""
+          - name: ARRAY_DECIMAL_PRECISION
+            description: ""
+          - name: ARRAY_DECIMAL_PRECISION_SCALE
+            description: ""
+          - name: ARRAY_DECIMAL_SCALE
+            description: ""
+          - name: ARRAY_FLOAT
+            description: ""
+          - name: ARRAY_GEOGRAPHY
+            description: ""
+          - name: ARRAY_GEOMETRY
+            description: ""
+          - name: ARRAY_INTEGER_128
+            description: ""
+          - name: ARRAY_INTEGER_16
+            description: ""
+          - name: ARRAY_INTEGER_32
+            description: ""
+          - name: ARRAY_INTEGER_4
+            description: ""
+          - name: ARRAY_INTEGER_64
+            description: ""
+          - name: ARRAY_INTEGER_8
+            description: ""
+          - name: ARRAY_JSON
+            description: ""
+          - name: ARRAY_MAP
+            description: ""
+          - name: ARRAY_STRING
+            description: ""
+          - name: ARRAY_STRING_ALLOWED_VALUES
+            description: ""
+          - name: ARRAY_STRING_MAX_AND_MIN_LENGTH
+            description: ""
+          - name: ARRAY_STRING_MAX_LENGTH
+            description: ""
+          - name: ARRAY_STRING_MIN_LENGTH
+            description: ""
+          - name: ARRAY_STRUCT_ALL
+            description: ""
+          - name: ARRAY_STRUCT_SIMPLE
+            description: ""
+          - name: ARRAY_TIME
+            description: ""
+          - name: ARRAY_UINTEGER_128
+            description: ""
+          - name: ARRAY_UINTEGER_16
+            description: ""
+          - name: ARRAY_UINTEGER_32
+            description: ""
+          - name: ARRAY_UINTEGER_4
+            description: ""
+          - name: ARRAY_UINTEGER_64
+            description: ""
+          - name: ARRAY_UINTEGER_8
+            description: ""
+          - name: ARRAY_UNION
+            description: ""
+          - name: ARRAY_XML
+            description: ""
+          - name: BOOLEAN
+            description: ""
+          - name: BYTES
+            description: ""
+          - name: CASE_DATA_FIELD_NAME
+            description: ""
+          - name: CASE_FULL_NAME
+            description: ""
+          - name: CASE_VARIANT_NAME
+            description: ""
+          - name: DATE
+            description: ""
+          - name: DATETIME_WITHOUT_TIMEZONE
+            description: ""
+          - name: DATETIME_WITH_TIMEZONE
+            description: ""
+          - name: DECIMAL
+            description: ""
+          - name: DECIMAL_HUGE_PRECISION
+            description: ""
+          - name: DECIMAL_PRECISION
+            description: ""
+          - name: DECIMAL_PRECISION_SCALE
+            description: ""
+          - name: DECIMAL_SCALE
+            description: ""
+          - name: FLOAT
+            description: ""
+          - name: GEOGRAPHY
+            description: ""
+          - name: GEOMETRY
+            description: ""
+          - name: INTEGER_128
+            description: ""
+          - name: INTEGER_16
+            description: ""
+          - name: INTEGER_32
+            description: ""
+          - name: INTEGER_4
+            description: ""
+          - name: INTEGER_64
+            description: ""
+          - name: INTEGER_8
+            description: ""
+          - name: JSON
+            description: ""
+          - name: JSON_OBJECT
+            description: ""
+          - name: MAP
+            description: ""
+          - name: MAP_ANY
+            description: ""
+          - name: MAP_HUGE_INT_KEY
+            description: ""
+          - name: MAP_INT_KEY
+            description: ""
+          - name: STRING
+            description: ""
+          - name: STRING_ALLOWED_VALUES
+            description: ""
+          - name: STRING_MAX_AND_MIN_LENGTH
+            description: ""
+          - name: STRING_MAX_LENGTH
+            description: ""
+          - name: STRING_MIN_LENGTH
+            description: ""
+          - name: STRUCT_ALL
+            description: ""
+          - name: STRUCT_NESTED
+            description: ""
+          - name: STRUCT_SIMPLE
+            description: ""
+          - name: TIME
+            description: ""
+          - name: UINTEGER_128
+            description: ""
+          - name: UINTEGER_16
+            description: ""
+          - name: UINTEGER_32
+            description: ""
+          - name: UINTEGER_4
+            description: ""
+          - name: UINTEGER_64
+            description: ""
+          - name: UINTEGER_8
+            description: ""
+          - name: UNION_NESTED
+            description: ""
+          - name: UNION_SIMPLE
+            description: ""
+          - name: XML
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASET_WITH_DELETES
+        description: ""
+        columns:
+          - name: ID
+            description: ""
+          - name: VAL
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_DELETED
+            description: Whether the row is deleted or not
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASET_WITH_ONE_ABSURDLY_BIG_RECORD
+        description: ""
+        columns:
+          - name: ID
+            description: ""
+          - name: VAL
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_28A3B6
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_476C55
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_57F798
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_66012D
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_76993A
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_8FE2E6
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_D4786D
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_DF571B
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_E9506D
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_F5269A
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: AGE
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_FD25EE
+    tables:
+      - name: DATASET
+        description: ""
+        columns:
+          - name: ANY
+            description: ""
+          - name: ARRAY_ANY
+            description: ""
+          - name: ARRAY_BOOLEAN
+            description: ""
+          - name: ARRAY_BYTES
+            description: ""
+          - name: ARRAY_DATE
+            description: ""
+          - name: ARRAY_DATETIME_WITHOUT_TIMEZONE
+            description: ""
+          - name: ARRAY_DATETIME_WITH_TIMEZONE
+            description: ""
+          - name: ARRAY_DECIMAL
+            description: ""
+          - name: ARRAY_DECIMAL_PRECISION
+            description: ""
+          - name: ARRAY_DECIMAL_PRECISION_SCALE
+            description: ""
+          - name: ARRAY_DECIMAL_SCALE
+            description: ""
+          - name: ARRAY_FLOAT
+            description: ""
+          - name: ARRAY_GEOGRAPHY
+            description: ""
+          - name: ARRAY_GEOMETRY
+            description: ""
+          - name: ARRAY_INTEGER_128
+            description: ""
+          - name: ARRAY_INTEGER_16
+            description: ""
+          - name: ARRAY_INTEGER_32
+            description: ""
+          - name: ARRAY_INTEGER_4
+            description: ""
+          - name: ARRAY_INTEGER_64
+            description: ""
+          - name: ARRAY_INTEGER_8
+            description: ""
+          - name: ARRAY_JSON
+            description: ""
+          - name: ARRAY_MAP
+            description: ""
+          - name: ARRAY_STRING
+            description: ""
+          - name: ARRAY_STRING_ALLOWED_VALUES
+            description: ""
+          - name: ARRAY_STRING_MAX_AND_MIN_LENGTH
+            description: ""
+          - name: ARRAY_STRING_MAX_LENGTH
+            description: ""
+          - name: ARRAY_STRING_MIN_LENGTH
+            description: ""
+          - name: ARRAY_STRUCT_ALL
+            description: ""
+          - name: ARRAY_STRUCT_SIMPLE
+            description: ""
+          - name: ARRAY_TIME
+            description: ""
+          - name: ARRAY_UINTEGER_128
+            description: ""
+          - name: ARRAY_UINTEGER_16
+            description: ""
+          - name: ARRAY_UINTEGER_32
+            description: ""
+          - name: ARRAY_UINTEGER_4
+            description: ""
+          - name: ARRAY_UINTEGER_64
+            description: ""
+          - name: ARRAY_UINTEGER_8
+            description: ""
+          - name: ARRAY_UNION
+            description: ""
+          - name: ARRAY_XML
+            description: ""
+          - name: BOOLEAN
+            description: ""
+          - name: BYTES
+            description: ""
+          - name: CASE_DATA_FIELD_NAME
+            description: ""
+          - name: CASE_FULL_NAME
+            description: ""
+          - name: CASE_VARIANT_NAME
+            description: ""
+          - name: DATE
+            description: ""
+          - name: DATETIME_WITHOUT_TIMEZONE
+            description: ""
+          - name: DATETIME_WITH_TIMEZONE
+            description: ""
+          - name: DECIMAL
+            description: ""
+          - name: DECIMAL_HUGE_PRECISION
+            description: ""
+          - name: DECIMAL_PRECISION
+            description: ""
+          - name: DECIMAL_PRECISION_SCALE
+            description: ""
+          - name: DECIMAL_SCALE
+            description: ""
+          - name: FLOAT
+            description: ""
+          - name: GEOGRAPHY
+            description: ""
+          - name: GEOMETRY
+            description: ""
+          - name: INTEGER_128
+            description: ""
+          - name: INTEGER_16
+            description: ""
+          - name: INTEGER_32
+            description: ""
+          - name: INTEGER_4
+            description: ""
+          - name: INTEGER_64
+            description: ""
+          - name: INTEGER_8
+            description: ""
+          - name: JSON
+            description: ""
+          - name: JSON_OBJECT
+            description: ""
+          - name: MAP
+            description: ""
+          - name: MAP_ANY
+            description: ""
+          - name: MAP_HUGE_INT_KEY
+            description: ""
+          - name: MAP_INT_KEY
+            description: ""
+          - name: STRING
+            description: ""
+          - name: STRING_ALLOWED_VALUES
+            description: ""
+          - name: STRING_MAX_AND_MIN_LENGTH
+            description: ""
+          - name: STRING_MAX_LENGTH
+            description: ""
+          - name: STRING_MIN_LENGTH
+            description: ""
+          - name: STRUCT_ALL
+            description: ""
+          - name: STRUCT_NESTED
+            description: ""
+          - name: STRUCT_SIMPLE
+            description: ""
+          - name: TIME
+            description: ""
+          - name: UINTEGER_128
+            description: ""
+          - name: UINTEGER_16
+            description: ""
+          - name: UINTEGER_32
+            description: ""
+          - name: UINTEGER_4
+            description: ""
+          - name: UINTEGER_64
+            description: ""
+          - name: UINTEGER_8
+            description: ""
+          - name: UNION_NESTED
+            description: ""
+          - name: UNION_SIMPLE
+            description: ""
+          - name: XML
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASET_WITH_SAME_NAME
+        description: ""
+        columns:
+          - name: ID
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS_FD25EE
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_0CEF5F
+    tables:
+      - name: DUMMY_CONTACTS_0CEF5F
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_SOURCE_DATASET
+        description: ""
+        columns:
+          - name: DUMMY_COL
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_4E29A4
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: DUMMY_CONTACTS_1D411B
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: AGE
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_A8560D
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: name
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: name
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: age
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_BE66CF
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: DUMMY_CONTACTS_BE66CF
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: AGE
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
     schema: RMEL
     tables:
-      - name: PRODUCTCATEGORIES
+      - name: AGGREGATES
         description: ""
-        tags: ["table_tag"]
         columns:
           - name: CATEGORYNAME
-            tags: []
-          - name: PRODUCTCATEGORYKEY
-            tags: []
+          - name: TOTAL_COST
+      - name: BLNS_DATASET
+        description: ""
+        columns:
+          - name: BLNS_COL
+            description: ""
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: []
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: []
+      - name: DATASET
+        description: ""
+        columns:
+          - name: ANY
+            description: ""
+          - name: ARRAY_ANY
+            description: ""
+          - name: ARRAY_BOOLEAN
+            description: ""
+          - name: ARRAY_BYTES
+            description: ""
+          - name: ARRAY_DATE
+            description: ""
+          - name: ARRAY_DATETIME_WITHOUT_TIMEZONE
+            description: ""
+          - name: ARRAY_DATETIME_WITH_TIMEZONE
+            description: ""
+          - name: ARRAY_DECIMAL
+            description: ""
+          - name: ARRAY_DECIMAL_PRECISION
+            description: ""
+          - name: ARRAY_DECIMAL_PRECISION_SCALE
+            description: ""
+          - name: ARRAY_DECIMAL_SCALE
+            description: ""
+          - name: ARRAY_FLOAT
+            description: ""
+          - name: ARRAY_GEOGRAPHY
+            description: ""
+          - name: ARRAY_GEOMETRY
+            description: ""
+          - name: ARRAY_INTEGER_128
+            description: ""
+          - name: ARRAY_INTEGER_16
+            description: ""
+          - name: ARRAY_INTEGER_32
+            description: ""
+          - name: ARRAY_INTEGER_4
+            description: ""
+          - name: ARRAY_INTEGER_64
+            description: ""
+          - name: ARRAY_INTEGER_8
+            description: ""
+          - name: ARRAY_JSON
+            description: ""
+          - name: ARRAY_MAP
+            description: ""
+          - name: ARRAY_STRING
+            description: ""
+          - name: ARRAY_STRING_ALLOWED_VALUES
+            description: ""
+          - name: ARRAY_STRING_MAX_AND_MIN_LENGTH
+            description: ""
+          - name: ARRAY_STRING_MAX_LENGTH
+            description: ""
+          - name: ARRAY_STRING_MIN_LENGTH
+            description: ""
+          - name: ARRAY_STRUCT_ALL
+            description: ""
+          - name: ARRAY_STRUCT_SIMPLE
+            description: ""
+          - name: ARRAY_TIME
+            description: ""
+          - name: ARRAY_UINTEGER_128
+            description: ""
+          - name: ARRAY_UINTEGER_16
+            description: ""
+          - name: ARRAY_UINTEGER_32
+            description: ""
+          - name: ARRAY_UINTEGER_4
+            description: ""
+          - name: ARRAY_UINTEGER_64
+            description: ""
+          - name: ARRAY_UINTEGER_8
+            description: ""
+          - name: ARRAY_UNION
+            description: ""
+          - name: ARRAY_XML
+            description: ""
+          - name: BOOLEAN
+            description: ""
+          - name: BYTES
+            description: ""
+          - name: CASE_DATA_FIELD_NAME
+            description: ""
+          - name: CASE_FULL_NAME
+            description: ""
+          - name: CASE_VARIANT_NAME
+            description: ""
+          - name: DATE
+            description: ""
+          - name: DATETIME_WITHOUT_TIMEZONE
+            description: ""
+          - name: DATETIME_WITH_TIMEZONE
+            description: ""
+          - name: DECIMAL
+            description: ""
+          - name: DECIMAL_HUGE_PRECISION
+            description: ""
+          - name: DECIMAL_PRECISION
+            description: ""
+          - name: DECIMAL_PRECISION_SCALE
+            description: ""
+          - name: DECIMAL_SCALE
+            description: ""
+          - name: FLOAT
+            description: ""
+          - name: GEOGRAPHY
+            description: ""
+          - name: GEOMETRY
+            description: ""
+          - name: INTEGER_128
+            description: ""
+          - name: INTEGER_16
+            description: ""
+          - name: INTEGER_32
+            description: ""
+          - name: INTEGER_4
+            description: ""
+          - name: INTEGER_64
+            description: ""
+          - name: INTEGER_8
+            description: ""
+          - name: JSON
+            description: ""
+          - name: JSON_OBJECT
+            description: ""
+          - name: MAP
+            description: ""
+          - name: MAP_ANY
+            description: ""
+          - name: MAP_HUGE_INT_KEY
+            description: ""
+          - name: MAP_INT_KEY
+            description: ""
+          - name: STRING
+            description: ""
+          - name: STRING_ALLOWED_VALUES
+            description: ""
+          - name: STRING_MAX_AND_MIN_LENGTH
+            description: ""
+          - name: STRING_MAX_LENGTH
+            description: ""
+          - name: STRING_MIN_LENGTH
+            description: ""
+          - name: STRUCT_ALL
+            description: ""
+          - name: STRUCT_NESTED
+            description: ""
+          - name: STRUCT_SIMPLE
+            description: ""
+          - name: TIME
+            description: ""
+          - name: UINTEGER_128
+            description: ""
+          - name: UINTEGER_16
+            description: ""
+          - name: UINTEGER_32
+            description: ""
+          - name: UINTEGER_4
+            description: ""
+          - name: UINTEGER_64
+            description: ""
+          - name: UINTEGER_8
+            description: ""
+          - name: UNION_NESTED
+            description: ""
+          - name: UNION_SIMPLE
+            description: ""
+          - name: XML
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASET_WITH_DELETES
+        description: ""
+        columns:
+          - name: ID
+            description: ""
+          - name: VAL
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_DELETED
+            description: Whether the row is deleted or not
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASET_WITH_SAME_NAME
+        description: ""
+        columns:
+          - name: ID
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATA_TYPE_TEST
+        description: ""
+        columns:
+          - name: ANY
+          - name: ARRAY_ANY
+          - name: ARRAY_BOOLEAN
+          - name: ARRAY_BYTES
+          - name: ARRAY_DATE
+          - name: ARRAY_DATETIME_WITHOUT_TIMEZONE
+          - name: ARRAY_DATETIME_WITH_TIMEZONE
+          - name: ARRAY_DECIMAL
+          - name: ARRAY_DECIMAL_PRECISION
+          - name: ARRAY_DECIMAL_PRECISION_SCALE
+          - name: ARRAY_DECIMAL_SCALE
+          - name: ARRAY_FLOAT
+          - name: ARRAY_GEOGRAPHY
+          - name: ARRAY_GEOMETRY
+          - name: ARRAY_INTEGER_128
+          - name: ARRAY_INTEGER_16
+          - name: ARRAY_INTEGER_32
+          - name: ARRAY_INTEGER_4
+          - name: ARRAY_INTEGER_64
+          - name: ARRAY_INTEGER_8
+          - name: ARRAY_JSON
+          - name: ARRAY_MAP
+          - name: ARRAY_STRING
+          - name: ARRAY_STRING_ALLOWED_VALUES
+          - name: ARRAY_STRING_MAX_AND_MIN_LENGTH
+          - name: ARRAY_STRING_MAX_LENGTH
+          - name: ARRAY_STRING_MIN_LENGTH
+          - name: ARRAY_STRUCT_ALL
+          - name: ARRAY_STRUCT_SIMPLE
+          - name: ARRAY_TIME
+          - name: ARRAY_UINTEGER_128
+          - name: ARRAY_UINTEGER_16
+          - name: ARRAY_UINTEGER_32
+          - name: ARRAY_UINTEGER_4
+          - name: ARRAY_UINTEGER_64
+          - name: ARRAY_UINTEGER_8
+          - name: ARRAY_UNION
+          - name: ARRAY_XML
+          - name: BOOLEAN
+          - name: BYTES
+          - name: CASE_DATA_FIELD_NAME
+          - name: CASE_FULL_NAME
+          - name: CASE_VARIANT_NAME
+          - name: DATE
+          - name: DATETIME_WITHOUT_TIMEZONE
+          - name: DATETIME_WITH_TIMEZONE
+          - name: DECIMAL
+          - name: DECIMAL_HUGE_PRECISION
+          - name: DECIMAL_PRECISION
+          - name: DECIMAL_PRECISION_SCALE
+          - name: DECIMAL_SCALE
+          - name: FLOAT
+          - name: GEOGRAPHY
+          - name: GEOMETRY
+          - name: INTEGER_128
+          - name: INTEGER_16
+          - name: INTEGER_32
+          - name: INTEGER_4
+          - name: INTEGER_64
+          - name: INTEGER_8
+          - name: JSON
+          - name: MAP
+          - name: MAP_ANY
+          - name: MAP_HUGE_INT_KEY
+          - name: MAP_INT_KEY
+          - name: STRING
+          - name: STRING_ALLOWED_VALUES
+          - name: STRING_MAX_AND_MIN_LENGTH
+          - name: STRING_MAX_LENGTH
+          - name: STRING_MIN_LENGTH
+          - name: STRUCT_ALL
+          - name: STRUCT_NESTED
+          - name: STRUCT_SIMPLE
+          - name: TIME
+          - name: UINTEGER_128
+          - name: UINTEGER_16
+          - name: UINTEGER_32
+          - name: UINTEGER_4
+          - name: UINTEGER_64
+          - name: UINTEGER_8
+          - name: UNION_NESTED
+          - name: UNION_SIMPLE
+          - name: XML
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: DUMMY_CONTACTS
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_SOURCE_DATASET
+        description: ""
+        columns:
+          - name: DUMMY_COL
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: NEW_MODEL
+        description: ""
+        columns:
+          - name: TEST
+      - name: PRODUCTCATEGORIES
+        description: ""
+        tags: &a1
+          - table_tag
+        columns:
+          - name: CATEGORYNAME
+            description: ""
+            tags: &a2 []
+          - name: PRODUCTCATEGORYKEY
+            description: ""
+            tags: &a3 []
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: &a4 []
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: &a5 []
       - name: PRODUCTS
         description: ""
-        tags: []
+        tags: &a6 []
         columns:
           - name: MODELNAME
-            tags: ["column_tag"]
+            description: ""
+            tags: &a7
+              - column_tag
           - name: PRODUCTCOLOR
-            tags: []
+            description: ""
+            tags: &a8 []
           - name: PRODUCTCOST
-            tags: []
+            description: ""
+            tags: &a9 []
           - name: PRODUCTDESCRIPTION
-            tags: []
+            description: ""
+            tags: &a10 []
           - name: PRODUCTKEY
-            tags: []
+            description: ""
+            tags: &a11 []
           - name: PRODUCTNAME
-            tags: []
+            description: ""
+            tags: &a12 []
           - name: PRODUCTPRICE
-            tags: []
+            description: ""
+            tags: &a13 []
           - name: PRODUCTSIZE
-            tags: []
+            description: ""
+            tags: &a14 []
           - name: PRODUCTSKU
-            tags: []
+            description: ""
+            tags: &a15 []
           - name: PRODUCTSTYLE
-            tags: []
+            description: ""
+            tags: &a16 []
           - name: PRODUCTSUBCATEGORYKEY
-            tags: []
+            description: ""
+            tags: &a17 []
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: []
+            tags: &a18 []
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: []
+            tags: &a19 []
       - name: PRODUCTSUBCATEGORIES
         description: ""
-        tags: []
+        tags: &a20 []
         columns:
           - name: PRODUCTCATEGORYKEY
-            tags: []
+            description: ""
+            tags: &a21 []
           - name: PRODUCTSUBCATEGORYKEY
-            tags: []
+            description: ""
+            tags: &a22 []
           - name: SUBCATEGORYNAME
-            tags: []
+            description: ""
+            tags: &a23 []
           - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
-            tags: []
+            tags: &a24 []
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-            tags: []
+            tags: &a25 []
+      - name: SALES_ORDERS
+        description: ""
+        columns:
+          - name: CUSTOMER_EMAIL
+          - name: ORDER_DATE
+          - name: ORDER_ID
+          - name: TOTAL_AMOUNT
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: SALES_ORDER_ITEMS
+        description: ""
+        columns:
+          - name: LINE_TOTAL
+          - name: ORDER_ID
+          - name: ORDER_ITEM_ID
+          - name: PRODUCT_KEY
+          - name: QUANTITY
+          - name: UNIT_PRICE
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: STG_PRODUCTCATEGORIES
+        description: ""
+        columns:
+          - name: CATEGORYNAME
+          - name: PRODUCTCATEGORYKEY
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: STG_PRODUCTS
+        description: ""
+        columns:
+          - name: MODELNAME
+          - name: PRODUCTCOLOR
+          - name: PRODUCTCOST
+          - name: PRODUCTDESCRIPTION
+          - name: PRODUCTKEY
+          - name: PRODUCTNAME
+          - name: PRODUCTPRICE
+          - name: PRODUCTSIZE
+          - name: PRODUCTSKU
+          - name: PRODUCTSTYLE
+          - name: PRODUCTSUBCATEGORYKEY
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: STG_PRODUCTSUBCATEGORIES
+        description: ""
+        columns:
+          - name: PRODUCTCATEGORYKEY
+          - name: PRODUCTSUBCATEGORYKEY
+          - name: SUBCATEGORYNAME
+          - name: _WAYFARE_CREATED_AT
+      - name: TEST
+        description: ""
+        columns:
+          - name: TEST
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_B4C542
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: name
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: name
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: age
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: RAW_MVEL
+    tables:
+      - name: DOCUMENTS
+        description: ""
+        columns:
+          - name: DOCUMENT_ID
+            description: ""
+          - name: FILEPATH
+            description: ""
+          - name: MD_5_CHECKSUM
+            description: ""
+          - name: VERSION_ID
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DOCUMENT_CONTENT
+        description: ""
+        columns:
+          - name: DOCUMENT_CONTENT
+          - name: DOCUMENT_ID
+          - name: FILEPATH
+          - name: PAGE_CONTENTS
+          - name: VERSION_ID
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: DOCUMENT_CONTENT_AND_METADATA
+        description: ""
+        columns:
+          - name: CLASSIFICATION
+          - name: CONTENT
+          - name: FILEPATH
+          - name: ID
+          - name: MAJOR_VERSION
+          - name: MINOR_VERSION
+          - name: NAME
+          - name: STATUS
+          - name: SUBTYPE
+          - name: SUMMARY
+          - name: TYPE
+      - name: DOCUMENT_METADATA
+        description: ""
+        columns:
+          - name: CLASSIFICATION
+            description: ""
+          - name: DOCUMENT_ID
+            description: ""
+          - name: FILENAME
+            description: ""
+          - name: MAJOR_VERSION_NUMBER
+            description: ""
+          - name: MD_5_CHECKSUM
+            description: ""
+          - name: MINOR_VERSION_NUMBER
+            description: ""
+          - name: NAME
+            description: ""
+          - name: STATUS
+            description: ""
+          - name: SUBTYPE
+            description: ""
+          - name: TYPE
+            description: ""
+          - name: VERSION_CREATION_DATE
+            description: ""
+          - name: VERSION_ID
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: INCR_DOCUMENT_CONTENT
+        description: ""
+        columns:
+          - name: DOCUMENT_ID
+          - name: FILEPATH
+          - name: PAGE_CONTENTS
+          - name: VERSION_ID
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: INCR_DOCUMENT_SUMMARY
+        description: ""
+        columns:
+          - name: DOCUMENT_ID
+          - name: DOCUMENT_SUMMARY
+          - name: FILEPATH
+          - name: VERSION_ID
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: PRODUCTCATEGORIES
+        description: ""
+        tags: *a1
+        columns:
+          - name: CATEGORYNAME
+            description: ""
+            tags: *a2
+          - name: PRODUCTCATEGORYKEY
+            description: ""
+            tags: *a3
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: *a4
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: *a5
+      - name: PRODUCTS
+        description: ""
+        tags: *a6
+        columns:
+          - name: MODELNAME
+            description: ""
+            tags: *a7
+          - name: PRODUCTCOLOR
+            description: ""
+            tags: *a8
+          - name: PRODUCTCOST
+            description: ""
+            tags: *a9
+          - name: PRODUCTDESCRIPTION
+            description: ""
+            tags: *a10
+          - name: PRODUCTKEY
+            description: ""
+            tags: *a11
+          - name: PRODUCTNAME
+            description: ""
+            tags: *a12
+          - name: PRODUCTPRICE
+            description: ""
+            tags: *a13
+          - name: PRODUCTSIZE
+            description: ""
+            tags: *a14
+          - name: PRODUCTSKU
+            description: ""
+            tags: *a15
+          - name: PRODUCTSTYLE
+            description: ""
+            tags: *a16
+          - name: PRODUCTSUBCATEGORYKEY
+            description: ""
+            tags: *a17
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: *a18
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: *a19
+      - name: PRODUCTSUBCATEGORIES
+        description: ""
+        tags: *a20
+        columns:
+          - name: PRODUCTCATEGORYKEY
+            description: ""
+            tags: *a21
+          - name: PRODUCTSUBCATEGORYKEY
+            description: ""
+            tags: *a22
+          - name: SUBCATEGORYNAME
+            description: ""
+            tags: *a23
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: *a24
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: *a25
+      - name: SELECT_FROM_PRODUCTS
+        description: ""
+        columns:
+          - name: MODELNAME
+          - name: PRODUCTCOLOR
+          - name: PRODUCTCOST
+          - name: PRODUCTDESCRIPTION
+          - name: PRODUCTKEY
+          - name: PRODUCTNAME
+          - name: PRODUCTPRICE
+          - name: PRODUCTSIZE
+          - name: PRODUCTSKU
+          - name: PRODUCTSTYLE
+          - name: PRODUCTSUBCATEGORYKEY
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: DRUG_APPROVALS_MVEL
+    tables:
+      - name: DOCUMENTS
+        description: ""
+        columns:
+          - name: DOCUMENT_ID
+            description: ""
+          - name: FILEPATH
+            description: ""
+          - name: MD_5_CHECKSUM
+            description: ""
+          - name: VERSION_ID
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DOCUMENT_METADATA
+        description: ""
+        columns:
+          - name: CLASSIFICATION
+            description: ""
+          - name: DOCUMENT_ID
+            description: ""
+          - name: FILENAME
+            description: ""
+          - name: MAJOR_VERSION_NUMBER
+            description: ""
+          - name: MD_5_CHECKSUM
+            description: ""
+          - name: MINOR_VERSION_NUMBER
+            description: ""
+          - name: NAME
+            description: ""
+          - name: STATUS
+            description: ""
+          - name: SUBTYPE
+            description: ""
+          - name: TYPE
+            description: ""
+          - name: VERSION_CREATION_DATE
+            description: ""
+          - name: VERSION_ID
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: INCR_EXTRACT_CONTENT
+        description: ""
+        columns:
+          - name: DOCUMENT_ID
+          - name: EXTRACT_DATE
+          - name: FILEPATH
+          - name: FILE_URL
+          - name: PAGE_CONTENTS
+          - name: VERSION_ID
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: INCR_SUMMARIZE_DOCUMENT
+        description: ""
+        columns:
+          - name: DOCUMENT_ID
+          - name: DOCUMENT_SUMMARY
+          - name: FILEPATH
+          - name: FILE_URL
+          - name: VERSION_ID
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: MERGED_DOCUMENT_DATA
+        description: ""
+        columns:
+          - name: CLASSIFICATION
+          - name: CONTENT
+          - name: DOCUMENT_ID
+          - name: FILEPATH
+          - name: FILE_URL
+          - name: MAJOR_VERSION
+          - name: MINOR_VERSION
+          - name: NAME
+          - name: STATUS
+          - name: SUBTYPE
+          - name: SUMMARY
+          - name: TYPE
+          - name: UNIQUE_ID
+          - name: VERSION_ID
+      - name: PROCESSED_DOCUMENTS
+        description: ""
+        columns:
+          - name: CLASSIFICATION
+            description: ""
+          - name: CONTENT
+            description: The processed document content
+          - name: DOCUMENT_ID
+            description: ""
+          - name: FILENAME
+            description: ""
+          - name: MAJOR_VERSION_NUMBER
+            description: ""
+          - name: MD_5_CHECKSUM
+            description: ""
+          - name: MINOR_VERSION_NUMBER
+            description: ""
+          - name: NAME
+            description: ""
+          - name: STATUS
+            description: ""
+          - name: SUBTYPE
+            description: ""
+          - name: TYPE
+            description: ""
+          - name: VERSION_CREATION_DATE
+            description: ""
+          - name: VERSION_ID
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: PROCESS_DOCUMENT_CONTENT
+        description: ""
+        columns:
+          - name: DOCUMENT_CONTENT
+          - name: DOCUMENT_ID
+          - name: EXTRACT_DATE
+          - name: FILEPATH
+          - name: FILE_URL
+          - name: PAGE_CONTENTS
+          - name: VERSION_ID
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_4F25E0
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: DUMMY_CONTACTS_C25701
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: AGE
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_E3AC5F
+    tables:
+      - name: BARFOO
+        description: ""
+        columns:
+          - name: ID
+      - name: DUMMY_CONTACTS_E3AC5F
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: FOOBAR
+        description: ""
+        columns:
+          - name: ID
+      - name: GOV_DUMMY_CONTACTS_E3AC5F
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL_S
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_A33EBA
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: name
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: name
+      - name: DUMMY_CONTACTS_A33EBA
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: age
+      - name: SELECT_WITH_CTES
+        description: ""
+        columns:
+          - name: FINAL_COL
+      - name: WITH_CTES
+        description: ""
+        columns:
+          - name: FINAL_COL
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_6CF22F
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: name
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: name
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: age
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: SRAS
+    tables:
+      - name: BLNS_DATASET
+        description: ""
+        columns:
+          - name: BLNS_COL
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASETAADAFG
+        description: ""
+        columns:
+          - name: ANY
+          - name: ARRAY_ANY
+          - name: ARRAY_BOOLEAN
+          - name: ARRAY_BYTES
+          - name: ARRAY_DATE
+          - name: ARRAY_DATETIME_WITHOUT_TIMEZONE
+          - name: ARRAY_DATETIME_WITH_TIMEZONE
+          - name: ARRAY_DECIMAL
+          - name: ARRAY_DECIMAL_PRECISION
+          - name: ARRAY_DECIMAL_PRECISION_SCALE
+          - name: ARRAY_DECIMAL_SCALE
+          - name: ARRAY_FLOAT
+          - name: ARRAY_GEOGRAPHY
+          - name: ARRAY_GEOMETRY
+          - name: ARRAY_INTEGER_128
+          - name: ARRAY_INTEGER_16
+          - name: ARRAY_INTEGER_32
+          - name: ARRAY_INTEGER_4
+          - name: ARRAY_INTEGER_64
+          - name: ARRAY_INTEGER_8
+          - name: ARRAY_JSON
+          - name: ARRAY_MAP
+          - name: ARRAY_STRING
+          - name: ARRAY_STRING_ALLOWED_VALUES
+          - name: ARRAY_STRING_MAX_AND_MIN_LENGTH
+          - name: ARRAY_STRING_MAX_LENGTH
+          - name: ARRAY_STRING_MIN_LENGTH
+          - name: ARRAY_STRUCT_ALL
+          - name: ARRAY_STRUCT_SIMPLE
+          - name: ARRAY_TIME
+          - name: ARRAY_UINTEGER_128
+          - name: ARRAY_UINTEGER_16
+          - name: ARRAY_UINTEGER_32
+          - name: ARRAY_UINTEGER_4
+          - name: ARRAY_UINTEGER_64
+          - name: ARRAY_UINTEGER_8
+          - name: ARRAY_UNION
+          - name: ARRAY_XML
+          - name: BOOLEAN
+          - name: BYTES
+          - name: CASE_DATA_FIELD_NAME
+          - name: CASE_FULL_NAME
+          - name: CASE_VARIANT_NAME
+          - name: DATE
+          - name: DATETIME_WITHOUT_TIMEZONE
+          - name: DATETIME_WITH_TIMEZONE
+          - name: DECIMAL
+          - name: DECIMAL_HUGE_PRECISION
+          - name: DECIMAL_PRECISION
+          - name: DECIMAL_PRECISION_SCALE
+          - name: DECIMAL_SCALE
+          - name: FLOAT
+          - name: GEOGRAPHY
+          - name: GEOMETRY
+          - name: INTEGER_128
+          - name: INTEGER_16
+          - name: INTEGER_32
+          - name: INTEGER_4
+          - name: INTEGER_64
+          - name: INTEGER_8
+          - name: JSON
+          - name: JSON_OBJECT
+          - name: MAP
+          - name: MAP_ANY
+          - name: MAP_HUGE_INT_KEY
+          - name: MAP_INT_KEY
+          - name: STRING
+          - name: STRING_ALLOWED_VALUES
+          - name: STRING_MAX_AND_MIN_LENGTH
+          - name: STRING_MAX_LENGTH
+          - name: STRING_MIN_LENGTH
+          - name: STRUCT_ALL
+          - name: STRUCT_NESTED
+          - name: STRUCT_SIMPLE
+          - name: TIME
+          - name: UINTEGER_128
+          - name: UINTEGER_16
+          - name: UINTEGER_32
+          - name: UINTEGER_4
+          - name: UINTEGER_64
+          - name: UINTEGER_8
+          - name: UNION_NESTED
+          - name: UNION_SIMPLE
+          - name: XML
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASET_WITH_SAME_NAME
+        description: ""
+        columns:
+          - name: ID
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASET_WITH_SAME_NAME1
+        description: ""
+        columns:
+          - name: ID
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASET_WITH_SAME_NAME112444
+        description: ""
+        columns:
+          - name: ID
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DATASET_WITH_SAME_NAME12312414
+        description: ""
+        columns:
+          - name: ID
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTS
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DUMMY_CONTACTSASDAD
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: M1
+        description: ""
+        columns:
+          - name: FIRST_ID
+          - name: SECOND_ID
+      - name: MODELMY
+        description: ""
+        columns:
+          - name: ID
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: M_1
+        description: ""
+        columns:
+          - name: ID
+          - name: _WAYFARE_CREATED_AT
+          - name: _WAYFARE_UPDATED_AT
+      - name: M_2
+        description: ""
+        columns:
+          - name: C
+          - name: E
+          - name: N
+      - name: M_3
+        description: ""
+        columns:
+          - name: C
+          - name: E
+          - name: N
+      - name: USERS
+        description: ""
+        columns:
+          - name: CREATED_AT
+          - name: EMAIL
+          - name: ID
+          - name: NAME
+          - name: PHONE
+          - name: SUSPENDED
+          - name: TAGS
+          - name: TICKET_RESTRICTION
+          - name: TIME_ZONE
+          - name: TWO_FACTOR_AUTH_ENABLED
+          - name: UPDATED_AT
+          - name: URL
+          - name: USER_FIELDS
+          - name: VERIFIED
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_558A84
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: name
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: name
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: age
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: _WAYFARE
+    tables:
+      - name: ACTIVATION_FAILURES_16097FE4
+        description: ""
+        columns:
+          - name: EMAIL
+            description: ""
+          - name: WAYFARE_ACTIVATION_ID
+            description: The id of the activation whose job result in this failure.
+          - name: WAYFARE_ERROR
+            description: A description of what went wrong during the activation of this
+              record.
+          - name: WAYFARE_JOB_ID
+            description: The id of the activation job in which this activation failure
+              occured.
+          - name: WAYFARE_TEMPORARY_RECORD_ID
+            description: The temporary id of the record. Used to identify records even when
+              they don't have a key.
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: ACTIVATION_FAILURES_2EAACDCE
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: WAYFARE_ACTIVATION_ID
+            description: The id of the activation whose job result in this failure.
+          - name: WAYFARE_ERROR
+            description: A description of what went wrong during the activation of this
+              record.
+          - name: WAYFARE_JOB_ID
+            description: The id of the activation job in which this activation failure
+              occured.
+          - name: WAYFARE_TEMPORARY_RECORD_ID
+            description: The temporary id of the record. Used to identify records even when
+              they don't have a key.
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: ACTIVATION_FAILURES_6316697F
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: WAYFARE_ACTIVATION_ID
+            description: The id of the activation whose job result in this failure.
+          - name: WAYFARE_ERROR
+            description: A description of what went wrong during the activation of this
+              record.
+          - name: WAYFARE_JOB_ID
+            description: The id of the activation job in which this activation failure
+              occured.
+          - name: WAYFARE_TEMPORARY_RECORD_ID
+            description: The temporary id of the record. Used to identify records even when
+              they don't have a key.
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: ACTIVATION_FAILURES_AE2567DC
+        description: ""
+        columns:
+          - name: ID
+            description: ""
+          - name: VAL
+            description: ""
+          - name: WAYFARE_ACTIVATION_ID
+            description: The id of the activation whose job result in this failure.
+          - name: WAYFARE_ERROR
+            description: A description of what went wrong during the activation of this
+              record.
+          - name: WAYFARE_JOB_ID
+            description: The id of the activation job in which this activation failure
+              occured.
+          - name: WAYFARE_TEMPORARY_RECORD_ID
+            description: The temporary id of the record. Used to identify records even when
+              they don't have a key.
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DIFF_DATASET_WITH_ONE_ABSURDLY_BIG_RECORD_AE2567DC
+        description: ""
+        columns:
+          - name: ID
+            description: ""
+          - name: VAL
+            description: ""
+          - name: WAYFARE_ACTUAL_OP
+            description: The operation that ended up being performed by the activation
+              connector.
+          - name: WAYFARE_ERROR
+            description: Any error encountered by the activation connector when handling the
+              record.
+          - name: WAYFARE_IS_ACK
+            description: Whether the diff engine heard back from the activation connector
+              about this record.
+          - name: WAYFARE_IS_SUCCESS
+            description: Whether the activation connector handled the record successfully.
+          - name: WAYFARE_JOB_ID
+            description: The id of the activation job that processed the record most
+              recently.
+          - name: WAYFARE_PLANNED_OP
+            description: The operation that was last planned for a record by the diff
+              engine.
+          - name: WAYFARE_RESPONSE
+            description: An optional custom format string that the activation connector can
+              optionally return, meant to be consumed by other warehouse models.
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DIFF_DUMMY_CONTACTS_16097FE4
+        description: ""
+        columns:
+          - name: EMAIL
+            description: ""
+          - name: WAYFARE_ACTUAL_OP
+            description: The operation that ended up being performed by the activation
+              connector.
+          - name: WAYFARE_ERROR
+            description: Any error encountered by the activation connector when handling the
+              record.
+          - name: WAYFARE_IS_ACK
+            description: Whether the diff engine heard back from the activation connector
+              about this record.
+          - name: WAYFARE_IS_SUCCESS
+            description: Whether the activation connector handled the record successfully.
+          - name: WAYFARE_JOB_ID
+            description: The id of the activation job that processed the record most
+              recently.
+          - name: WAYFARE_PLANNED_OP
+            description: The operation that was last planned for a record by the diff
+              engine.
+          - name: WAYFARE_RESPONSE
+            description: An optional custom format string that the activation connector can
+              optionally return, meant to be consumed by other warehouse models.
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DIFF_DUMMY_CONTACTS_8CF93A_FF9A444B
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_DIFF_ACTUAL_OP
+            description: The operation that ended up being performed by the activation
+              connector.
+          - name: _WAYFARE_DIFF_ERROR
+            description: Any error encountered by the activation connector when handling the
+              record.
+          - name: _WAYFARE_DIFF_IS_ACK
+            description: Whether the diff engine heard back from the activation connector
+              about this record.
+          - name: _WAYFARE_DIFF_IS_SUCCESS
+            description: Whether the activation connector handled the record successfully.
+          - name: _WAYFARE_DIFF_JOB_ID
+            description: The id of the activation job that processed the record most
+              recently.
+          - name: _WAYFARE_DIFF_PLANNED_OP
+            description: The operation that was last planned for a record by the diff
+              engine.
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DIFF_DUMMY_CONTACTS_8FE2E6_2EAACDCE
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: WAYFARE_ACTUAL_OP
+            description: The operation that ended up being performed by the activation
+              connector.
+          - name: WAYFARE_ERROR
+            description: Any error encountered by the activation connector when handling the
+              record.
+          - name: WAYFARE_IS_ACK
+            description: Whether the diff engine heard back from the activation connector
+              about this record.
+          - name: WAYFARE_IS_SUCCESS
+            description: Whether the activation connector handled the record successfully.
+          - name: WAYFARE_JOB_ID
+            description: The id of the activation job that processed the record most
+              recently.
+          - name: WAYFARE_PLANNED_OP
+            description: The operation that was last planned for a record by the diff
+              engine.
+          - name: WAYFARE_RESPONSE
+            description: An optional custom format string that the activation connector can
+              optionally return, meant to be consumed by other warehouse models.
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DIFF_DUMMY_CONTACTS_8FE2E6_6316697F
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: WAYFARE_ACTUAL_OP
+            description: The operation that ended up being performed by the activation
+              connector.
+          - name: WAYFARE_ERROR
+            description: Any error encountered by the activation connector when handling the
+              record.
+          - name: WAYFARE_IS_ACK
+            description: Whether the diff engine heard back from the activation connector
+              about this record.
+          - name: WAYFARE_IS_SUCCESS
+            description: Whether the activation connector handled the record successfully.
+          - name: WAYFARE_JOB_ID
+            description: The id of the activation job that processed the record most
+              recently.
+          - name: WAYFARE_PLANNED_OP
+            description: The operation that was last planned for a record by the diff
+              engine.
+          - name: WAYFARE_RESPONSE
+            description: An optional custom format string that the activation connector can
+              optionally return, meant to be consumed by other warehouse models.
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DIFF_DUMMY_CONTACTS_9484C1_0769A628
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_DIFF_ACTUAL_OP
+            description: The operation that ended up being performed by the activation
+              connector.
+          - name: _WAYFARE_DIFF_ERROR
+            description: Any error encountered by the activation connector when handling the
+              record.
+          - name: _WAYFARE_DIFF_IS_ACK
+            description: Whether the diff engine heard back from the activation connector
+              about this record.
+          - name: _WAYFARE_DIFF_IS_SUCCESS
+            description: Whether the activation connector handled the record successfully.
+          - name: _WAYFARE_DIFF_JOB_ID
+            description: The id of the activation job that processed the record most
+              recently.
+          - name: _WAYFARE_DIFF_PLANNED_OP
+            description: The operation that was last planned for a record by the diff
+              engine.
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DIFF_DUMMY_CONTACTS_DD8BDD_10D066B1
+        description: ""
+        columns:
+          - name: COMPANY
+            description: ""
+          - name: EMAIL
+            description: ""
+          - name: NAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_DIFF_ACTUAL_OP
+            description: The operation that ended up being performed by the activation
+              connector.
+          - name: _WAYFARE_DIFF_ERROR
+            description: Any error encountered by the activation connector when handling the
+              record.
+          - name: _WAYFARE_DIFF_IS_ACK
+            description: Whether the diff engine heard back from the activation connector
+              about this record.
+          - name: _WAYFARE_DIFF_IS_SUCCESS
+            description: Whether the activation connector handled the record successfully.
+          - name: _WAYFARE_DIFF_JOB_ID
+            description: The id of the activation job that processed the record most
+              recently.
+          - name: _WAYFARE_DIFF_PLANNED_OP
+            description: The operation that was last planned for a record by the diff
+              engine.
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: DIFF_PRODUCTS_4A1EEEE8
+        description: ""
+        columns:
+          - name: PRODUCTKEY
+            description: ""
+          - name: PRODUCTNAME
+            description: ""
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_DIFF_ACTUAL_OP
+            description: The operation that ended up being performed by the activation
+              connector.
+          - name: _WAYFARE_DIFF_ERROR
+            description: Any error encountered by the activation connector when handling the
+              record.
+          - name: _WAYFARE_DIFF_IS_ACK
+            description: Whether the diff engine heard back from the activation connector
+              about this record.
+          - name: _WAYFARE_DIFF_IS_SUCCESS
+            description: Whether the activation connector handled the record successfully.
+          - name: _WAYFARE_DIFF_JOB_ID
+            description: The id of the activation job that processed the record most
+              recently.
+          - name: _WAYFARE_DIFF_PLANNED_OP
+            description: The operation that was last planned for a record by the diff
+              engine.
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_47685B
+    tables:
+      - name: DUMMY_CONTACTS_47685B
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_20B597
+    tables:
+      - name: CONSTSOURCE
+        description: ""
+        columns:
+          - name: name
+      - name: CONSUMER
+        description: ""
+        columns:
+          - name: name
+      - name: ORPHANED
+        description: ""
+        columns:
+          - name: age
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: ZENDESK
+    tables:
+      - name: TICKETS
+        description: ""
+        columns:
+          - name: ASSIGNEE_ID
+          - name: CREATED_AT
+          - name: DESCRIPTION
+          - name: DUE_AT
+          - name: EXTERNAL_ID
+          - name: ID
+          - name: IS_PUBLIC
+          - name: ORGANIZATION_ID
+          - name: PRIORITY
+          - name: PROBLEM_ID
+          - name: RAW_SUBJECT
+          - name: RECIPIENT
+          - name: REQUESTER_ID
+          - name: STATUS
+          - name: SUBJECT
+          - name: TYPE
+          - name: UPDATED_AT
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_3858C3
+    tables:
+      - name: DUMMY_CONTACTS_3858C3
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+  - database: DEV
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: WAREHOUSE_5D2579
+    tables:
+      - name: DUMMY_CONTACTS_5D2579
+        description: ""
+        columns:
+          - name: COMPANY
+          - name: EMAIL
+          - name: NAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
