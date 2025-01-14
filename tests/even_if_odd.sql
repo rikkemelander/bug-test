@@ -3,7 +3,7 @@
     {{ config(severity = 'warn') }}
 
     select *
-    from {{ STG_PRODUCTS }}
-    where ({{ PRODUCTCOST }} % 2) = 1
+    from {{ model }}
+    where ({{ column_name }} % 2) = 1
 
 {% endtest %}
