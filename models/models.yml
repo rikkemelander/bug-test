@@ -1,0 +1,39 @@
+version: 2
+models:
+  - name: STG_PRODUCTS
+    columns:
+      - name: PRODUCTSTYLE
+      - name: PRODUCTDESCRIPTION
+      - name: PRODUCTCOST
+        tests:
+      	  - warn_if_odd 
+      - name: _WAYFARE_UPDATED_AT
+      - name: PRODUCTPRICE
+      - name: PRODUCTNAME
+      - name: PRODUCTSKU
+      - name: PRODUCTCOLOR
+      - name: PRODUCTSUBCATEGORYKEY
+      - name: _WAYFARE_CREATED_AT
+      - name: MODELNAME
+      - name: PRODUCTSIZE
+      - name: PRODUCTKEY
+  - name: AGGREGATES
+    columns:
+      - name: CATEGORYNAME
+      - name: TOTAL_COST
+  - name: STG_PRODUCTSUBCATEGORIES
+    columns:
+      - name: PRODUCTSUBCATEGORYKEY
+      - name: PRODUCTCATEGORYKEY
+      - name: _WAYFARE_CREATED_AT
+      - name: SUBCATEGORYNAME
+  - name: STG_PRODUCTCATEGORIES
+    columns:
+      - name: _WAYFARE_CREATED_AT
+      - name: CATEGORYNAME
+      - name: _WAYFARE_UPDATED_AT
+      - name: PRODUCTCATEGORYKEY
+  - name: NEW_MODEL
+    columns:
+      - name: TOTAL_COST
+      - name: CATEGORYNAME
