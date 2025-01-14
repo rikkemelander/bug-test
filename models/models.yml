@@ -5,7 +5,7 @@ models:
       - name: PRODUCTSTYLE
       - name: PRODUCTDESCRIPTION
       - name: PRODUCTCOST
-        tests:
+        data_tests:
           - warn_if_odd
       - name: _WAYFARE_UPDATED_AT
       - name: PRODUCTPRICE
