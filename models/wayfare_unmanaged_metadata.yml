@@ -467,7 +467,7 @@ sources:
           - name: PRODUCTCOLOR
           - name: PRODUCTCOST
             tests:
-      	    - warn_if_odd 
+      	      - warn_if_odd 
           - name: PRODUCTDESCRIPTION
           - name: PRODUCTKEY
           - name: PRODUCTNAME
