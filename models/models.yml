@@ -21,6 +21,10 @@ models:
     columns:
       - name: CATEGORYNAME
       - name: TOTAL_COST
+  - name: KOMNU
+    columns:
+      - name: TOTAL_COST
+      - name: CATEGORYNAME
   - name: STG_PRODUCTSUBCATEGORIES
     columns:
       - name: PRODUCTCATEGORYKEY
@@ -34,10 +38,6 @@ models:
       - name: _WAYFARE_UPDATED_AT
       - name: PRODUCTCATEGORYKEY
   - name: NEW_MODEL
-    columns:
-      - name: CATEGORYNAME
-      - name: TOTAL_COST
-  - name: TEST_ACCESS_CONTROL
     columns:
       - name: CATEGORYNAME
       - name: TOTAL_COST
