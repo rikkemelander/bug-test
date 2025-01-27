@@ -37,3 +37,7 @@ models:
     columns:
       - name: CATEGORYNAME
       - name: TOTAL_COST
+  - name: TEST_ACCESS_CONTROL
+    columns:
+      - name: CATEGORYNAME
+      - name: TOTAL_COST
