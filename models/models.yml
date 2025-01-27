@@ -37,7 +37,3 @@ models:
     columns:
       - name: CATEGORYNAME
       - name: TOTAL_COST
-  - name: YES
-    columns:
-      - name: CATEGORYNAME
-      - name: TOTAL_COST
