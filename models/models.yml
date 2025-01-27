@@ -2,18 +2,34 @@ version: 2
 models:
   - name: STG_PRODUCTS
     columns:
-      - name: PRODUCTSTYLE
+      - name: _WAYFARE_CREATED_AT
       - name: PRODUCTDESCRIPTION
+      - name: PRODUCTSKU
+      - name: MODELNAME
+      - name: _WAYFARE_UPDATED_AT
+      - name: PRODUCTKEY
+      - name: PRODUCTSTYLE
       - name: PRODUCTCOST
         data_tests:
           - warn_if_odd
-      - name: _WAYFARE_UPDATED_AT
-      - name: PRODUCTPRICE
-      - name: PRODUCTNAME
-      - name: PRODUCTSKU
+      - name: PRODUCTSIZE
       - name: PRODUCTCOLOR
+      - name: PRODUCTNAME
+      - name: PRODUCTPRICE
+      - name: PRODUCTSUBCATEGORYKEY
+  - name: AGGREGATES
+    columns:
+      - name: CATEGORYNAME
+      - name: TOTAL_COST
+  - name: STG_PRODUCTSUBCATEGORIES
+    columns:
+      - name: PRODUCTCATEGORYKEY
       - name: PRODUCTSUBCATEGORYKEY
       - name: _WAYFARE_CREATED_AT
-      - name: MODELNAME
-      - name: PRODUCTSIZE
-      - name: PRODUCTKEY
+      - name: SUBCATEGORYNAME
+  - name: STG_PRODUCTCATEGORIES
+    columns:
+      - name: CATEGORYNAME
+      - name: _WAYFARE_CREATED_AT
+      - name: _WAYFARE_UPDATED_AT
+      - name: PRODUCTCATEGORYKEY

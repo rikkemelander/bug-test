@@ -345,10 +345,6 @@ sources:
             description: The transaction time at which the row was created by Wayfare
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
-      - name: NEW_MODEL
-        description: ""
-        columns:
-          - name: TEST
       - name: PRODUCTCATEGORIES
         description: ""
         tags: &a1
@@ -429,62 +425,3 @@ sources:
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
             tags: &a25 []
-      - name: SALES_ORDERS
-        description: ""
-        columns:
-          - name: CUSTOMER_EMAIL
-          - name: ORDER_DATE
-          - name: ORDER_ID
-          - name: TOTAL_AMOUNT
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
-      - name: SALES_ORDER_ITEMS
-        description: ""
-        columns:
-          - name: LINE_TOTAL
-          - name: ORDER_ID
-          - name: ORDER_ITEM_ID
-          - name: PRODUCT_KEY
-          - name: QUANTITY
-          - name: UNIT_PRICE
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
-      - name: STG_PRODUCTCATEGORIES
-        description: ""
-        columns:
-          - name: CATEGORYNAME
-          - name: PRODUCTCATEGORYKEY
-          - name: _WAYFARE_CREATED_AT
-          - name: _WAYFARE_UPDATED_AT
-      - name: STG_PRODUCTS
-        description: ""
-        columns:
-          - name: MODELNAME
-          - name: PRODUCTCOLOR
-          - name: PRODUCTCOST
-          - name: PRODUCTDESCRIPTION
-          - name: PRODUCTKEY
-          - name: PRODUCTNAME
-          - name: PRODUCTPRICE
-          - name: PRODUCTSIZE
-          - name: PRODUCTSKU
-          - name: PRODUCTSTYLE
-          - name: PRODUCTSUBCATEGORYKEY
-          - name: _WAYFARE_CREATED_AT
-          - name: _WAYFARE_UPDATED_AT
-      - name: STG_PRODUCTSUBCATEGORIES
-        description: ""
-        columns:
-          - name: PRODUCTCATEGORYKEY
-          - name: PRODUCTSUBCATEGORYKEY
-          - name: SUBCATEGORYNAME
-          - name: _WAYFARE_CREATED_AT
-      - name: TEST
-        description: ""
-        columns:
-          - name: TEST
-  
