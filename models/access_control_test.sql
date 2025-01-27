@@ -1,1 +1,1 @@
-select * from {{ ref('AGGREGATES') }}
+select * from {{ ref('STG_PRODUCTCATEGORIES') }}
