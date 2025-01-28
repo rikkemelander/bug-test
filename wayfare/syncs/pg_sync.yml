@@ -9,6 +9,7 @@ syncs:
     file_storage:
       folder_path: ""
       file_details:
+        compression: zstd
         type: PARQUET
       batch_size: 250000
       delete_after_sync: true
@@ -17,31 +18,14 @@ syncs:
         target_name: products
         data_extraction_config:
           name: Full Extract
+          values: null
         loading_option:
           type: Upsert
           delete_mode: hard
           primary_keys:
             - demo.source.products.productkey
         data_fields:
-          - unique_id: demo.source.products.productstyle
-            target_name: productstyle
-          - unique_id: demo.source.products.productsubcategorykey
-            target_name: productsubcategorykey
-          - unique_id: demo.source.products.productcolor
-            target_name: productcolor
-          - unique_id: demo.source.products.productname
-            target_name: productname
-          - unique_id: demo.source.products.productdescription
-            target_name: productdescription
-          - unique_id: demo.source.products.productcost
-            target_name: productcost
-          - unique_id: demo.source.products.productsize
-            target_name: productsize
-          - unique_id: demo.source.products.productprice
-            target_name: productprice
           - unique_id: demo.source.products.modelname
             target_name: modelname
-          - unique_id: demo.source.products.productsku
-            target_name: productsku
           - unique_id: demo.source.products.productkey
             target_name: productkey
