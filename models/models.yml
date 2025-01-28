@@ -33,7 +33,3 @@ models:
       - name: _WAYFARE_CREATED_AT
       - name: _WAYFARE_UPDATED_AT
       - name: PRODUCTCATEGORYKEY
-  - name: NEW_MODEL
-    columns:
-      - name: CATEGORYNAME
-      - name: TOTAL_COST
