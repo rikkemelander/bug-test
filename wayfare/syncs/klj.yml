@@ -9,6 +9,7 @@ syncs:
     file_storage:
       folder_path: ""
       file_details:
+        compression: zstd
         type: PARQUET
       batch_size: 250000
       delete_after_sync: true
@@ -27,10 +28,6 @@ syncs:
             target_name: case_full_name
           - unique_id: case_variant_name
             target_name: case_variant_name
-          - unique_id: dataset.any
-            target_name: any
-          - unique_id: dataset.array_any
-            target_name: array_any
           - unique_id: dataset.array_boolean
             target_name: array_boolean
           - unique_id: dataset.array_bytes
