@@ -31,8 +31,8 @@ syncs:
         data_extraction_config:
           name: Incremental
           values:
-            random_deletes: true
             percent_deletes: "0.1"
+            random_deletes: true
         loading_option:
           type: Upsert
           delete_mode: soft
