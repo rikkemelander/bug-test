@@ -1,0 +1,30 @@
+version: "0.1"
+syncs:
+  - id: 565a28b8-5ccc-4143-860d-dda9b166f1b4
+    connection_id: 599ce1fd-a002-4c33-8a49-4199bcb2d98d
+    name: kg
+    description: ""
+    extraction_concurrency:
+      num_workers: 1
+    file_storage:
+      folder_path: ""
+      file_details:
+        type: PARQUET
+      batch_size: 250000
+      delete_after_sync: true
+    data_sets:
+      - unique_id: dataset_with_deletes_uid
+        target_name: dataset_with_deletes
+        data_extraction_config:
+          name: Incremental
+          values:
+            random_deletes: true
+            percent_deletes: "0.1"
+        loading_option:
+          type: Upsert
+          delete_mode: soft
+          primary_keys:
+            - dataset_with_deletes_uid.id
+        data_fields:
+          - unique_id: dataset_with_deletes_uid.id
+            target_name: id
