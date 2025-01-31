@@ -14,6 +14,16 @@ syncs:
       batch_size: 250000
       delete_after_sync: true
     data_sets:
+      - unique_id: dataset_with_one_absurdly_big_record
+        target_name: new_name
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: dataset_with_one_absurdly_big_record.id
+            target_name: id
       - unique_id: dataset
         target_name: dataset
         data_extraction_config:
@@ -28,46 +38,3 @@ syncs:
             target_name: array_any
           - unique_id: dataset.array_boolean
             target_name: array_boolean
-          - unique_id: dataset.array_bytes
-            target_name: array_bytes
-          - unique_id: dataset.array_date
-            target_name: array_date
-          - unique_id: dataset.array_datetime_with_timezone
-            target_name: array_datetime_with_timezone
-          - unique_id: dataset.array_datetime_without_timezone
-            target_name: array_datetime_without_timezone
-          - unique_id: dataset.array_decimal
-            target_name: array_decimal
-          - unique_id: dataset.array_decimal_precision
-            target_name: array_decimal_precision
-          - unique_id: dataset.array_decimal_precision_scale
-            target_name: array_decimal_precision_scale
-      - unique_id: dataset_with_deletes_uid
-        target_name: dataset_with_deletes
-        data_extraction_config:
-          name: Incremental
-          values:
-            percent_deletes: "0.1"
-            random_deletes: true
-        loading_option:
-          type: Upsert
-          delete_mode: soft
-          primary_keys:
-            - dataset_with_deletes_uid.id
-        data_fields:
-          - unique_id: dataset_with_deletes_uid.id
-            target_name: id
-          - unique_id: dataset_with_deletes_uid.val
-            target_name: val
-      - unique_id: dataset_with_one_absurdly_big_record
-        target_name: dataset_with_one_absurdly_big_record
-        data_extraction_config:
-          name: Full Extract
-          values: null
-        loading_option:
-          type: Truncate and insert
-        data_fields:
-          - unique_id: dataset_with_one_absurdly_big_record.id
-            target_name: id
-          - unique_id: dataset_with_one_absurdly_big_record.val
-            target_name: val
