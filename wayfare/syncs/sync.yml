@@ -1,7 +1,7 @@
 version: "0.1"
 syncs:
-  - id: fa631af4-9a30-4c70-b4b0-f9bcd8dab9b8
-    connection_id: cc8a1ce1-95da-4547-8048-ae5b7353f5d4
+  - id: cd2aaaf2-bfd5-42c4-b948-891f3708d9ac
+    connection_id: 99d69ac8-fd04-4cc3-b0d8-cad5d6aba57a
     name: sync
     description: ""
     extraction_concurrency:
@@ -18,18 +18,18 @@ syncs:
         data_extraction_config:
           name: Incremental
           values:
-            random_deletes: true
             percent_deletes: "0.1"
+            random_deletes: true
         loading_option:
           type: Upsert
-          delete_mode: hard
+          delete_mode: soft
           primary_keys:
             - dataset_with_deletes_uid.id
         data_fields:
-          - unique_id: dataset_with_deletes_uid.val
-            target_name: val
           - unique_id: dataset_with_deletes_uid.id
             target_name: id
+          - unique_id: dataset_with_deletes_uid.val
+            target_name: val
       - unique_id: dataset_with_one_absurdly_big_record
         target_name: dataset_with_one_absurdly_big_record
         data_extraction_config:
@@ -52,7 +52,7 @@ syncs:
         data_fields:
           - unique_id: dummy_contacts_uid.company
             target_name: company
-          - unique_id: dummy_contacts_uid.name
-            target_name: name
           - unique_id: dummy_contacts_uid.email
             target_name: email
+          - unique_id: dummy_contacts_uid.name
+            target_name: name
