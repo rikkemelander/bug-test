@@ -1,7 +1,7 @@
 version: "0.1"
 syncs:
-  - id: e6045375-3c42-4665-99ee-8556328fc224
-    connection_id: 84036a8c-96d5-42ca-9a58-1a785bfd18e2
+  - id: 00a61262-9bfb-498b-8a73-ca766790e302
+    connection_id: 498efe31-6c7c-499c-857b-8f3b7b9b6897
     name: sync
     description: ""
     extraction_concurrency:
