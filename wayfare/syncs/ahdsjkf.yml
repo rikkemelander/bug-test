@@ -1,0 +1,25 @@
+version: "0.1"
+syncs:
+  - id: 94970876-1c41-4c41-9f97-3869b672b8c3
+    connection_id: 7a9bf20c-5d7d-4b5c-9bbb-2d123285d72c
+    name: ahdsjkf
+    description: ""
+    extraction_concurrency:
+      num_workers: 1
+    file_storage:
+      folder_path: ""
+      file_details:
+        type: PARQUET
+      batch_size: 250000
+      delete_after_sync: true
+    data_sets:
+      - unique_id: blns_dataset_uid
+        target_name: blns_dataset
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: blns_dataset_uid.blns_col
+            target_name: blns_col
