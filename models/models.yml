@@ -1,35 +1,36 @@
 version: 2
 models:
   - name: STG_PRODUCTS
+    description: Contains data on all customer team products that are used in BI reporting for this and that. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum customer dolor sit amet. Lorem ipsum dolor sit amet. Lorem customer ipsum dolor sit amet. 
     columns:
-      - name: _WAYFARE_CREATED_AT
-      - name: PRODUCTDESCRIPTION
-      - name: PRODUCTSKU
-      - name: MODELNAME
       - name: _WAYFARE_UPDATED_AT
+      - name: PRODUCTSKU
+      - name: _WAYFARE_CREATED_AT
       - name: PRODUCTKEY
+      - name: PRODUCTNAME
+      - name: PRODUCTSIZE
+      - name: PRODUCTSUBCATEGORYKEY
       - name: PRODUCTSTYLE
+      - name: PRODUCTDESCRIPTION
       - name: PRODUCTCOST
         data_tests:
           - warn_if_odd
-      - name: PRODUCTSIZE
       - name: PRODUCTCOLOR
-      - name: PRODUCTNAME
       - name: PRODUCTPRICE
-      - name: PRODUCTSUBCATEGORYKEY
+      - name: MODELNAME
   - name: AGGREGATES
     columns:
       - name: CATEGORYNAME
       - name: TOTAL_COST
   - name: STG_PRODUCTSUBCATEGORIES
     columns:
-      - name: PRODUCTCATEGORYKEY
       - name: PRODUCTSUBCATEGORYKEY
+      - name: PRODUCTCATEGORYKEY
       - name: _WAYFARE_CREATED_AT
       - name: SUBCATEGORYNAME
   - name: STG_PRODUCTCATEGORIES
     columns:
-      - name: CATEGORYNAME
-      - name: _WAYFARE_CREATED_AT
       - name: _WAYFARE_UPDATED_AT
+      - name: _WAYFARE_CREATED_AT
+      - name: CATEGORYNAME
       - name: PRODUCTCATEGORYKEY
