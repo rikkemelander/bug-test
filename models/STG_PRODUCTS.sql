@@ -12,4 +12,4 @@ select
     PRODUCTS._WAYFARE_CREATED_AT as _WAYFARE_CREATED_AT,
     PRODUCTS._WAYFARE_UPDATED_AT as _WAYFARE_UPDATED_AT,
     PRODUCTS.PRODUCTCOST + 0 as PRODUCTCOST
-from {{ source('wayfare_unmanaged', 'PRODUCTS') }} as PRODUCTS
+from {{ source('sync', 'PRODUCTS') }} as PRODUCTS

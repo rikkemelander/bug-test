@@ -1,7 +1,10 @@
 version: 2
 models:
   - name: STG_PRODUCTS
-    description: Contains data on all customer team products that are used in BI reporting for this and that. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum customer dolor sit amet. Lorem ipsum dolor sit amet. Lorem customer ipsum dolor sit amet. 
+    description: Contains data on all customer team products that are used in BI
+      reporting for this and that. Lorem ipsum dolor sit amet. Lorem ipsum dolor
+      sit amet. Lorem ipsum customer dolor sit amet. Lorem ipsum dolor sit amet.
+      Lorem customer ipsum dolor sit amet.
     columns:
       - name: _WAYFARE_UPDATED_AT
       - name: PRODUCTSKU

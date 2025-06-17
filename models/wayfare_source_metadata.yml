@@ -18,4 +18,51 @@
 # and any added properties might be reordered.
 
 version: 2
-sources: []
+sources:
+  - database: INTERNAL_DEVELOPMENT
+    name: sync
+    description: Sources from the sync sync
+    schema: RMEL
+    loader: wayfare
+    loaded_at_field: _wayfare_updated_at
+    tables:
+      - name: PRODUCTCATEGORIES
+        description: ""
+        loaded_at_field: _wayfare_updated_at
+        columns:
+          - name: CATEGORYNAME
+          - name: PRODUCTCATEGORYKEY
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: PRODUCTS
+        description: ""
+        loaded_at_field: _wayfare_updated_at
+        columns:
+          - name: MODELNAME
+          - name: PRODUCTCOLOR
+          - name: PRODUCTCOST
+          - name: PRODUCTDESCRIPTION
+          - name: PRODUCTKEY
+          - name: PRODUCTNAME
+          - name: PRODUCTPRICE
+          - name: PRODUCTSIZE
+          - name: PRODUCTSKU
+          - name: PRODUCTSTYLE
+          - name: PRODUCTSUBCATEGORYKEY
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: PRODUCTSUBCATEGORIES
+        description: ""
+        loaded_at_field: _wayfare_updated_at
+        columns:
+          - name: PRODUCTCATEGORYKEY
+          - name: PRODUCTSUBCATEGORYKEY
+          - name: SUBCATEGORYNAME
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
